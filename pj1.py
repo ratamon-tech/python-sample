@@ -1,17 +1,29 @@
+"""
+名前生成ジェネレーター
+"""
 import random
 import sys
 
-first = ("hoge", "fuga", "piyo")
-last = ("abc", "def", "ghi")
+def main():
+    """
+    名前生成プログラムを実行
+    :return:
+    """
 
-while True:
-    firstName = random.choice(first)
-    lastName = random.choice(last)
+    first = ("hoge", "fuga", "piyo")
+    last = ("abc", "def", "ghi")
 
-    print(f'{firstName} {lastName}', file=sys.stderr)
+    while True:
+        first_name = random.choice(first)
+        last_name = random.choice(last)
 
-    try_again = input("\n\nTry again? (Press Enter else n to quit)\n")
-    if try_again.lower() == "n":
-        break
+        print(f'{first_name} {last_name}', file=sys.stderr)
 
-input("\nPress Enter to exit.")
+        try_again = input("\n\nTry again? (Press Enter else n to quit)\n")
+        if try_again.lower() == "n":
+            break
+
+    input("\nPress Enter to exit.")
+
+if __name__ == "__main__":
+    main()
