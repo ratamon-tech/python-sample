@@ -1,3 +1,7 @@
+"""
+回文見つける
+"""
+
 word = 'hoge'
 print(f'word is {word}')
 print(f'word[:] is {word[:]}')
