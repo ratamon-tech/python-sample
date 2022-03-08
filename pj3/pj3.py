@@ -1,3 +1,7 @@
+"""
+アナグラム検索
+"""
+
 word = 'piyo'
 
 print(f'word is {word}.')
